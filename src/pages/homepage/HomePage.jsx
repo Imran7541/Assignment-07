@@ -10,7 +10,7 @@ const HomePage = () => {
     return (
         <>
  <div className="px-3 md:px-6">
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto my-[60px]">
       
       <Banner/>
       <Cart/>

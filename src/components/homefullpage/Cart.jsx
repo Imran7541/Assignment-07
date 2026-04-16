@@ -4,7 +4,7 @@ import React from 'react';
 const Cart = () => {
     return (
   <div>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 px-4 ">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 px-8 p-10">
 
   {/* Card 1 */}
   <div className="bg-white shadow rounded-xl p-5 text-center">

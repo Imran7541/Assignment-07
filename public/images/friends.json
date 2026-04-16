@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://ibb.co.com/3yvvTmsm",
+    "picture": "/images/a(1).png",
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Sarah Lee",
-    "picture": "https://ibb.co.com/JRDxSSbQ",
+    "picture": "/images/b(2).png",
     "email": "sarah@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Smith",
-    "picture": "https://ibb.co.com/Qv9jwKJ1",
+    "picture": "/images/c (3).png",
     "email": "michael@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Emily Johnson",
-    "picture": "https://ibb.co.com/RpyfCF00",
+    "picture": "/images/d(4).png",
     "email": "emily@example.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "David Brown",
-    "picture": "https://ibb.co.com/pBRNk3L8",
+    "picture": "/images/e (5).png",
     "email": "david@example.com",
     "days_since_contact": 8,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Olivia Wilson",
-    "picture": "https://ibb.co.com/JRDxSSbQ",
+    "picture": "/images/z(7).png",
     "email": "olivia@example.com",
     "days_since_contact": 15,
     "status": "overdue",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "James Anderson",
-    "picture": "https://ibb.co.com/PzGBXh8j",
+    "picture": "/images/h(8).png",
     "email": "james@example.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Sophia Martinez",
-    "picture": "https://ibb.co.com/BV3hr9Ny",
+    "picture": "/images/i.png",
     "email": "sophia@example.com",
     "days_since_contact": 11,
     "status": "almost due",
