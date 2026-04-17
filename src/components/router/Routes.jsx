@@ -6,6 +6,7 @@ import Stats from "../../pages/stats/Stats";
 import Timeline from "../../pages/timeline/Timeline";
 import FriendDetails from "../../pages/FriendDetails";
 
+
  export const router=createBrowserRouter(
   [
     {
@@ -15,11 +16,12 @@ import FriendDetails from "../../pages/FriendDetails";
         {
           index:true,
           element:<HomePage/>,
-          loader:()=>fetch('/friends.json')
+          loader:()=>fetch('/images/friends.json')
         },
         {
          path:'/friend/:id',
-         element:<FriendDetails/>
+         element:<FriendDetails/>,
+         
         },
         {
           path:'/timeline',
