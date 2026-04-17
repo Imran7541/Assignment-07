@@ -38,55 +38,129 @@ const FriendDetails = () => {
   };
 
   return (
-    <div className="flex container mx-auto">
-      <div className="shadow p-6">
-        <img src={expectedFriend?.picture} alt="" />
-        <h2>{expectedFriend?.name}</h2>
+  <div className="bg-gray-100 min-h-screen p-6">
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        <div className="btn btn-dash btn-accent rounded-full py-2">
+      {/* LEFT CARD */}
+      <div className="bg-white rounded-xl shadow p-6 text-center">
+        <img
+          src={expectedFriend?.picture}
+          alt=""
+          className="w-20 h-20 mx-auto rounded-full object-cover"
+        />
+
+        <h2 className="text-lg font-semibold mt-3">
+          {expectedFriend?.name}
+        </h2>
+
+        {/* STATUS */}
+        <div
+          className={`mt-2 px-3 py-1 text-xs rounded-full inline-block ${
+            statusMap[expectedFriend?.status]
+          }`}
+        >
+          {expectedFriend?.status}
+        </div>
+
+        {/* TAG */}
+        <div className="mt-2 text-xs text-gray-500">
           {expectedFriend?.tags}
         </div>
 
-        <div className="mt-3 pb-3">
-          <div
-            className={`px-4 py-1 rounded-full text-xs font-semibold inline-block ${
-              statusMap[expectedFriend?.status]
-            }`}
-          >
-            {expectedFriend?.status}
+        {/* INFO */}
+        <p className="text-sm italic text-gray-500 mt-3">
+          "Former colleague, great mentor"
+        </p>
+
+        <p className="text-xs text-gray-400 mt-1">
+          Preferred: email
+        </p>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="md:col-span-2 space-y-6">
+
+        {/* TOP STATS */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-white p-5 rounded-xl shadow text-center">
+            <h2 className="text-2xl font-bold">
+              {expectedFriend?.days_since_contact}
+            </h2>
+            <p className="text-sm text-gray-500">
+              Days Since Contact
+            </p>
           </div>
 
-          <div>Day Since Contact: {expectedFriend?.days_since_contact}</div>
-          <div>Goal(Days): {expectedFriend?.goal}</div>
-          <div>Next Due: {expectedFriend?.next_due_date}</div>
+          <div className="bg-white p-5 rounded-xl shadow text-center">
+            <h2 className="text-2xl font-bold">
+              {expectedFriend?.goal}
+            </h2>
+            <p className="text-sm text-gray-500">
+              Goal (Days)
+            </p>
+          </div>
+
+          <div className="bg-white p-5 rounded-xl shadow text-center">
+            <h2 className="text-lg font-semibold">
+              {expectedFriend?.next_due_date}
+            </h2>
+            <p className="text-sm text-gray-500">
+              Next Due
+            </p>
+          </div>
         </div>
 
-        {/* ACTIONS */}
-        <div className="flex gap-4 mt-4">
-          <img
-            src={callImag}
-            alt=""
-            className="w-6 cursor-pointer"
-            onClick={() => handleTimeline("Call")}
-          />
+        {/* RELATIONSHIP GOAL */}
+        <div className="bg-white rounded-xl shadow p-5 flex justify-between items-center">
+          <div>
+            <h3 className="font-semibold">Relationship Goal</h3>
+            <p className="text-sm text-gray-500">
+              Connect every{" "}
+              <span className="font-semibold">
+                {expectedFriend?.goal} days
+              </span>
+            </p>
+          </div>
 
-          <img
-            src={textImag}
-            alt=""
-            className="w-6 cursor-pointer"
-            onClick={() => handleTimeline("Text")}
-          />
+          <button className="px-3 py-1 border rounded-md text-sm">
+            Edit
+          </button>
+        </div>
 
-          <img
-            src={videoImag}
-            alt=""
-            className="w-6 cursor-pointer"
-            onClick={() => handleTimeline("Video")}
-          />
+        {/* QUICK ACTION */}
+        <div className="bg-white rounded-xl shadow p-5">
+          <h3 className="font-semibold mb-4">Quick Check-In</h3>
+
+          <div className="grid grid-cols-3 gap-4 text-center">
+            <div
+              className="p-4 border rounded-lg cursor-pointer hover:bg-gray-100"
+              onClick={() => handleTimeline("Call")}
+            >
+              <img src={callImag} className="w-6 mx-auto mb-2" />
+              <p className="text-sm">Call</p>
+            </div>
+
+            <div
+              className="p-4 border rounded-lg cursor-pointer hover:bg-gray-100"
+              onClick={() => handleTimeline("Text")}
+            >
+              <img src={textImag} className="w-6 mx-auto mb-2" />
+              <p className="text-sm">Text</p>
+            </div>
+
+            <div
+              className="p-4 border rounded-lg cursor-pointer hover:bg-gray-100"
+              onClick={() => handleTimeline("Video")}
+            >
+              <img src={videoImag} className="w-6 mx-auto mb-2" />
+              <p className="text-sm">Video</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default FriendDetails;

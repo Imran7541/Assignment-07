@@ -13,19 +13,19 @@ const Cart = () => {
         {/* Card 2 */}
         <div className="bg-white shadow rounded-xl p-5 text-center">
           <h2 className="text-3xl font-bold text-red-500">4</h2>
-          <p className="text-gray-600 mt-2">Overdue</p>
+          <p className="text-gray-600 mt-2">On Track</p>
         </div>
 
         {/* Card 3 */}
         <div className="bg-white shadow rounded-xl p-5 text-center">
-          <h2 className="text-3xl font-bold text-yellow-500">3</h2>
-          <p className="text-gray-600 mt-2">Almost Due</p>
+          <h2 className="text-3xl font-bold text-yellow-500">6</h2>
+          <p className="text-gray-600 mt-2">Need Attention</p>
         </div>
 
         {/* Card 4 */}
         <div className="bg-white shadow rounded-xl p-5 text-center">
-          <h2 className="text-3xl font-bold text-green-500">5</h2>
-          <p className="text-gray-600 mt-2">On Track</p>
+          <h2 className="text-3xl font-bold text-green-500">12</h2>
+          <p className="text-gray-600 mt-2">Interactions This Month</p>
         </div>
       </div>
     </div>
