@@ -1,16 +1,31 @@
-# React + Vite
+# 🌿 KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Overview
 
-Currently, two official plugins are available:
+**KeenKeeper** is a modern relationship management web application designed to help users maintain and strengthen meaningful personal connections. By tracking interactions, setting communication goals, and providing timely reminders, the app ensures that important relationships are never neglected.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React.js** — Component-based UI development
+* **Tailwind CSS** — Utility-first responsive design
+* **React Router** — Client-side routing
+* **JavaScript (ES6+)** — Application logic
+* **API** — Persistent client-side data storage
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+* **Interaction Tracking:** Monitor calls, texts, and video interactions with a timeline-based history
+* **Relationship Insights:** View days since last contact, upcoming due dates, and progress toward goals
+* **Quick Actions:** Instantly log interactions (Call, Text, Video) with a single click
+
+---
+
+## 🎯 Purpose
+
+The goal of KeenKeeper is to promote intentional communication and help users build stronger, more consistent relationships through simple and effective tracking tools.
+
+---
