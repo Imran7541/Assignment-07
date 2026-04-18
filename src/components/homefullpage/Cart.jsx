@@ -22,24 +22,6 @@ const Cart = () => {
           <p className="text-gray-600 mt-2">Need Attention</p>
         </div>
 
-         {/* ddjd fdjddf dfdj */}
-          {/* ACTION BUTTONS */}
-          <div className="space-y-2 pt-3">
-            <button className="w-full border rounded-lg py-2 text-sm">
-              Snooze 2 Weeks
-            </button>
-            <button className="w-full border rounded-lg py-2 text-sm">
-              Archive
-            </button>
-            <button className="w-full border rounded-lg py-2 text-sm text-red-500">
-              Delete
-            </button>
-          </div>
-
-
-
-         {/* dfkdjdf dfdsfdsfs dfkdds  */}
-
         {/* Card 4 */}
         <div className="bg-white shadow rounded-xl p-5 text-center">
           <h2 className="text-3xl font-bold text-green-500">12</h2>

@@ -28,7 +28,7 @@ const FriendCart = () => {
                 </div>
               </figure>
 
-              <div className="font-bold text-xl">
+              <div className=" ">
                 <h2>{singleFriend.name}</h2>
                 <p className="text-gray-400 text-xs">62d ago</p>
                 <div className="space-y-3 grid my-3">
@@ -37,7 +37,7 @@ const FriendCart = () => {
                   </button>
 
                   <button
-                    className={`py-2 w-32 rounded-2xl ${statusMap[singleFriend.status]}`}
+                    className={`font-semibold py-2 w-32 rounded-2xl ${statusMap[singleFriend.status]}`}
                   >
                     {singleFriend.status}
                   </button>
