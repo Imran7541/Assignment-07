@@ -31,19 +31,16 @@ const FriendCart = () => {
               <div className="font-bold text-xl">
                 <h2>{singleFriend.name}</h2>
                 <p className="text-gray-400 text-xs">62d ago</p>
+                <div className="space-y-3 grid my-3">
+                  <button className="bg-green-200 rounded-2xl p-2   items-center w-32">
+                    {singleFriend.tags}
+                  </button>
 
-                <div className="btn btn-dash btn-accent rounded-full py-2">
-                  {singleFriend.tags}
-                </div>
-
-                <div className="mt-3 pb-3">
-                  <div
-                    className={`px-4 py-1 rounded-full text-xs font-semibold inline-block ${
-                      statusMap[singleFriend.status]
-                    }`}
+                  <button
+                    className={`py-2 w-32 rounded-2xl ${statusMap[singleFriend.status]}`}
                   >
                     {singleFriend.status}
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
